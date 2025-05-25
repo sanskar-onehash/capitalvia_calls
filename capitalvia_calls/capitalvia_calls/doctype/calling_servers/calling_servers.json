@@ -1,0 +1,95 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2024-02-26 15:05:49.158260",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "title",
+    "link_address",
+    "link_public_address",
+    "last_insert_id",
+    "limit",
+    "authorization_key",
+    "exclude_list",
+    "enabled",
+    "file_prefix"
+  ],
+  "fields": [
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "label": "Title"
+    },
+    {
+      "fieldname": "link_address",
+      "fieldtype": "Data",
+      "label": "Link Address"
+    },
+    {
+      "fieldname": "link_public_address",
+      "fieldtype": "Data",
+      "label": "Link Public Address"
+    },
+    {
+      "fieldname": "last_insert_id",
+      "fieldtype": "Int",
+      "label": "Last Insert ID"
+    },
+    {
+      "fieldname": "limit",
+      "fieldtype": "Data",
+      "label": "Limit"
+    },
+    {
+      "fieldname": "authorization_key",
+      "fieldtype": "Data",
+      "label": "Authorization Key"
+    },
+    {
+      "fieldname": "click_to_call",
+      "fieldtype": "Check",
+      "label": "Click to Call"
+    },
+    {
+      "fieldname": "exclude_list",
+      "fieldtype": "Long Text",
+      "label": "Exclude List"
+    },
+    {
+      "default": "0",
+      "fieldname": "enabled",
+      "fieldtype": "Check",
+      "label": "Enabled"
+    },
+    {
+      "fieldname": "file_prefix",
+      "fieldtype": "Data",
+      "label": "File Prefix"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2024-02-26 15:05:49.158260",
+  "modified_by": "Administrator",
+  "module": "Capitalvia Calls",
+  "name": "Calling Servers",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

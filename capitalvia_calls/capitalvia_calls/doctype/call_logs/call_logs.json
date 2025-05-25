@@ -1,0 +1,209 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "naming_series:",
+  "creation": "2024-02-26 15:02:24.400314",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "call_time",
+    "play_recording",
+    "customer_phone",
+    "column_break_5",
+    "sales_person",
+    "department",
+    "extension",
+    "column_break_9",
+    "call_status",
+    "billing_second",
+    "column_break_12",
+    "call_type",
+    "calling_duration",
+    "auditing_details_section",
+    "recheck",
+    "check_point",
+    "remarks",
+    "column_break_19",
+    "reference_call",
+    "audit_status",
+    "audited_by",
+    "audited_on",
+    "other_information_section",
+    "call_unique_id",
+    "recording",
+    "column_break_27",
+    "calling_server"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Select",
+      "label": "Naming Series",
+      "options": "CL-.YYYY.-.########"
+    },
+    {
+      "fieldname": "call_time",
+      "fieldtype": "Datetime",
+      "label": "Call Time"
+    },
+    {
+      "fieldname": "play_recording",
+      "fieldtype": "Attach",
+      "label": "Play Recording"
+    },
+    {
+      "fieldname": "customer_phone",
+      "fieldtype": "Data",
+      "label": "Customer Phone"
+    },
+    {
+      "fieldname": "column_break_5",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "sales_person",
+      "fieldtype": "Link",
+      "label": "Sales Person",
+      "options": "Sales Person"
+    },
+    {
+      "fieldname": "department",
+      "fieldtype": "Link",
+      "label": "Department",
+      "options": "Department"
+    },
+    {
+      "fieldname": "extension",
+      "fieldtype": "Data",
+      "label": "Extension"
+    },
+    {
+      "fieldname": "column_break_9",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "call_status",
+      "fieldtype": "Select",
+      "label": "Call Status",
+      "options": "\nANSWERED\nBUSY\nFAILED\nNO ANSWER"
+    },
+    {
+      "fieldname": "billing_second",
+      "fieldtype": "Time",
+      "label": "Billing Second"
+    },
+    {
+      "fieldname": "column_break_12",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "call_type",
+      "fieldtype": "Select",
+      "label": "Call Type",
+      "options": "\nIncoming\nInternal\nOutgoing"
+    },
+    {
+      "fieldname": "calling_duration",
+      "fieldtype": "Time",
+      "label": "Calling Duration"
+    },
+    {
+      "fieldname": "auditing_details_section",
+      "fieldtype": "Section Break",
+      "label": "Auditing Details"
+    },
+    {
+      "fieldname": "recheck",
+      "fieldtype": "Select",
+      "label": "Recheck",
+      "options": "\nYes\nNo"
+    },
+    {
+      "fieldname": "check_point",
+      "fieldtype": "Select",
+      "label": "Check Point",
+      "options": "\nP1\nP2\nP3"
+    },
+    {
+      "fieldname": "remarks",
+      "fieldtype": "Small Text",
+      "label": "Remarks"
+    },
+    {
+      "fieldname": "column_break_19",
+      "fieldtype": "Column Break"
+    },
+    {
+      "default": "0",
+      "fieldname": "reference_call",
+      "fieldtype": "Check",
+      "label": "Reference Call"
+    },
+    {
+      "fieldname": "audit_status",
+      "fieldtype": "Select",
+      "label": "Audit Status",
+      "options": "\nAudited"
+    },
+    {
+      "fieldname": "audited_by",
+      "fieldtype": "Data",
+      "label": "Audited By"
+    },
+    {
+      "fieldname": "audited_on",
+      "fieldtype": "Datetime",
+      "label": "Audited On"
+    },
+    {
+      "fieldname": "other_information_section",
+      "fieldtype": "Section Break",
+      "label": "Other Information"
+    },
+    {
+      "fieldname": "call_unique_id",
+      "fieldtype": "Data",
+      "label": "Call Unique ID"
+    },
+    {
+      "fieldname": "recording",
+      "fieldtype": "Small Text",
+      "label": "Recording"
+    },
+    {
+      "fieldname": "column_break_27",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "calling_server",
+      "fieldtype": "Data",
+      "label": "Calling Server"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2024-02-26 15:02:24.400314",
+  "modified_by": "Administrator",
+  "module": "Capitalvia Calls",
+  "name": "Call Logs",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
+
