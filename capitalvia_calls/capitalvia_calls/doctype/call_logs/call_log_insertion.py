@@ -40,16 +40,9 @@ def create_automatic_call_logs():
         return str(timedelta(seconds=parms))
 
     def insert_many(docs):
-        if len(docs):
-            doctype = docs[0]["doctype"]
-            fields = [key for key in docs[0]]
-            values = []
-            for doc in docs:
-                doc_values = []
-                for field in fields:
-                    doc_values.append(doc[field])
-            frappe.db.bulk_insert(doctype, fields, values)
-            frappe.db.commit()
+        for doc in docs:
+            frappe.get_doc(doc).insert()
+        frappe.db.commit()
 
     def retrieve_cdr(server_info):
         header = {
@@ -178,7 +171,7 @@ def create_automatic_call_logs():
 
     def update_last_insert_id(server, inserted_id):
         frappe.db.set_value(
-            server["doctype"], server["name"], "last_insert_id", inserted_id
+            "Calling Servers", server["name"], "last_insert_id", inserted_id
         )
         frappe.db.commit()
 

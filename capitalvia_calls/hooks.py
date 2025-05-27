@@ -150,23 +150,28 @@ fixtures = ["Custom Field"]
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"capitalvia_calls.tasks.all"
-# 	],
-# 	"daily": [
-# 		"capitalvia_calls.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"capitalvia_calls.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"capitalvia_calls.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"capitalvia_calls.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+    # 	"all": [
+    # 		"capitalvia_calls.tasks.all"
+    # 	],
+    # 	"daily": [
+    # 		"capitalvia_calls.tasks.daily"
+    # 	],
+    # 	"hourly": [
+    # 		"capitalvia_calls.tasks.hourly"
+    # 	],
+    # 	"weekly": [
+    # 		"capitalvia_calls.tasks.weekly"
+    # 	],
+    # 	"monthly": [
+    # 		"capitalvia_calls.tasks.monthly"
+    # 	],
+    "cron": {
+        "0 */2 * * *": [
+            "capitalvia_calls.capitalvia_calls.doctype.call_logs.call_log_insertion.create_automatic_call_logs",
+        ],
+    }
+}
 
 # Testing
 # -------
