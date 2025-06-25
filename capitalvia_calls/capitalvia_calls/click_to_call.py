@@ -27,7 +27,6 @@ def click_to_call(target):
 
         url = f"{serverInfo.link_public_address}/click2call.php"
 
-        response = session.post(url, headers=header, data=data, verify=False)
-        frappe.log_error("Click to call res", response)
+        session.post(url, headers=header, data=data, verify=False)
     except Exception as e:
         frappe.log_error("Click to call error", e)
